@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:apps="http://schemas.google.com/apps/2006"
+    xmlns:gd="http://schemas.google.com/g/2005"> 
+  <atom:id>https://apps-apis.google.com/a/feeds/group/2.0/example.com/us-sales/member/suejones%40example.com</atom:id> 
+  <atom:link rel="self" type="application/atom+xml"
+      href="https://apps-apis.google.com/a/feeds/group/2.0/example.com/us-sales/member/suejones%40example.com"/> 
+  <atom:link rel="edit" type="application/atom+xml"
+      href="https://apps-apis.google.com/a/feeds/group/2.0/example.com/us-sales/member/suejones%40example.com"/>  
+  <apps:property name="memberId" value="suejones@example.com"/>
+  <apps:property name="memberType" value="User"/> 
+  <apps:property name="directMember" value="true"/> 
+</atom:entry>

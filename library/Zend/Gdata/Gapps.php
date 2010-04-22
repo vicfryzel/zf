@@ -81,6 +81,12 @@ class Zend_Gdata_Gapps extends Zend_Gdata
     const APPS_NICKNAME_PATH = '/nickname/2.0';
 
     /**
+     * Path to group feeds on the Google Apps server.
+     */
+    const APPS_GROUP_PATH = '/group/2.0';
+
+
+    /**
      * Path to email list feeds on the Google Apps server.
      */
     const APPS_EMAIL_LIST_PATH = '/emailList/2.0';
