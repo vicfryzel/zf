@@ -85,6 +85,10 @@ class Zend_Gdata_Gapps extends Zend_Gdata
      */
     const APPS_GROUP_PATH = '/group/2.0';
 
+    /**
+     * Path to group feeds on the Google Apps server.
+     */
+    const APPS_CALENDAR_RESOURCE_PATH = '/calendar/resource/2.0';
 
     /**
      * Path to email list feeds on the Google Apps server.
