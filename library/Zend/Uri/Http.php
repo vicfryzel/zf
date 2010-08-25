@@ -50,6 +50,13 @@ class Zend_Uri_Http extends Zend_Uri
     const CHAR_UNWISE   = '{}|\\\\^`';
 
     /**
+     * HTTP scheme
+     *
+     * @var string
+     */
+    protected $_scheme = '';
+
+   /**
      * HTTP username
      *
      * @var string
@@ -286,6 +293,30 @@ class Zend_Uri_Http extends Zend_Uri
     }
 
     /**
+     * Returns the scheme portion of the URL, or FALSE if none.
+     *
+     * @return string
+     */
+    public function getScheme()
+    {
+        return strlen($this->_scheme) > 0 ? $this->_scheme : false;
+    }
+ 
+    /**
+     * Sets the scheme for the current URI, and returns the old scheme
+     *
+     * @param  string $scheme The HTTP scheme
+     * @return string
+     */
+    public function setScheme($scheme)
+    {
+        $oldScheme = $this->_scheme;
+        $this->_scheme = $scheme;
+
+        return $oldScheme;
+    }
+
+   /**
      * Returns the username portion of the URL, or FALSE if none.
      *
      * @return string

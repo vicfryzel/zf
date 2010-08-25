@@ -52,6 +52,9 @@ class Zend_Gdata_DocsTest extends PHPUnit_Framework_TestCase
         
         // Check to make sure the correct URI is in use
         $this->assertEquals(
+                "https",
+                $request->uri->getScheme());
+        $this->assertEquals(
                 "docs.google.com",
                 $request->uri->getHost());
         $this->assertEquals(
